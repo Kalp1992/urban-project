@@ -1,38 +1,558 @@
-.App {
-  text-align: center;
+.the-heading{
+  margin-top:80px;
+   margin-left:10%;
+   margin-bottom:-20px;
+}
+.super-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.super-container > div:first-child {
+  flex: 1;
+  min-width: 500x;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 0.5rem;
+  width: 600px; /* Or use max-content or fit-content depending on look */
+}
+
+.item-box {
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
   color: white;
+  height: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.container{
+ 
+  margin:5% 10%;
+}
+.scene-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  border-radius: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* 3D Canvas as background */
+.mountain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 450px;
+border-radius: 40px;
+  z-index: 0;
+}
+
+/* Form overlay */
+.form-container {
+  position: absolute;
+ 
+  /* z-index: 10; */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 20%;
+  max-width: 40%;
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.point{
+  font-size: 25px;
+}
+.learing-heading{
+  font-size: 12px;
+}
+.list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+.custom-item{
+    background: gray;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100px;
+  height: 35px;
+  padding: 1px;
+  text-align: center;
+}
+.custom-item p{
+  margin-top:4px
+}
+.dot-grid{
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 7px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.circle-dot{
+    width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+@media (max-width: 1024px) {
+.the-heading{
+  margin-top:80px;
+   margin-left:8%;
+   margin-bottom:-20px;
+}
+.super-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.super-container > div:first-child {
+  flex: 1;
+  min-width: 500x;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 400px; /* Or use max-content or fit-content depending on look */
+}
+
+.item-box {
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  height: 150px;
+}
+
+
+
+.container{
+ 
+  margin:5% 10%;
+}
+.scene-wrapper {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+/* 3D Canvas as background */
+.mountain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  height: 350px;
+border-radius: 40px;
+  z-index: 0;
+}
+
+/* Form overlay */
+.form-container {
+  position: absolute;
+ 
+  /* z-index: 10; */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 12px;
+  min-width: 17%;
+  max-width: 35%;
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 60%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.point{
+  font-size: 25px;
+}
+.learing-heading{
+  font-size: 12px;
+}
+.list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.custom-item{
+    background: gray;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100px;
+  height: 25px;
+  padding: 1px;
+  text-align: center;
+}
+.custom-item p{
+  margin-top:2px;
+  font-size: 14px;
+}
+.dot-grid{
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.circle-dot{
+    width: 7px;
+  height: 7px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.content-of-list h1{
+font-size: 16px;
+}
+.content-of-list p{
+font-size: 12px;
+}
+}
+@media (max-width: 768px) {
+.the-heading{
+  margin-top:80px;
+   margin-left:15%;
+   margin-bottom:-20px;
+}
+.super-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.super-container > div:first-child {
+  flex: 1;
+  min-width: 500x;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 300px; /* Or use max-content or fit-content depending on look */
+}
+
+.item-box {
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  height: 150px;
+}
+
+
+
+.container{
+ 
+  margin:5% 10%;
+}
+.scene-wrapper {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+/* 3D Canvas as background */
+.mountain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 300px;
+border-radius: 40px;
+  z-index: 0;
+}
+
+/* Form overlay */
+.form-container {
+  position: absolute;
+ 
+  /* z-index: 10; */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 12px;
+  min-width: 15%;
+  max-width: 40%;
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 60%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.point{
+  font-size: 25px;
+}
+.learing-heading{
+  font-size: 12px;
+}
+.list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.custom-item{
+    background: gray;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 80px;
+  height: 30px;
+  padding: 1px;
+  text-align: center;
+}
+.custom-item p{
+  margin-top:5px
+}
+.dot-grid{
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.circle-dot{
+    width: 7px;
+  height: 7px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+}
+@media (max-width: 480px) {
+  .the-heading{
+  margin-top:80px;
+   margin-left:15%;
+   margin-bottom:-20px;
+}
+.super-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.super-container > div:first-child {
+  flex: 1;
+  min-width: 500x;
+}
+
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 600px; /* Or use max-content or fit-content depending on look */
+}
+
+.item-box {
+  background-color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  height: 200px;
+}
+
+
+
+.container{
+ 
+  margin:5% 10%;
+}
+.scene-wrapper {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+/* 3D Canvas as background */
+.mountain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 300px;
+border-radius: 40px;
+  z-index: 0;
+}
+
+/* Form overlay */
+.form-container {
+  position: absolute;
+ 
+  /* z-index: 10; */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 20%;
+  max-width: 40%;
+  font-family: sans-serif;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.point{
+  font-size: 25px;
+}
+.learing-heading{
+  font-size: 12px;
+}
+.list-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  width: 100%;
+  background: black;
+  color: white;
+  border-radius: 20px;
+  padding: 15px;
+}
+.custom-item{
+    background: gray;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 100px;
+  height: 35px;
+  padding: 1px;
+  text-align: center;
+}
+.custom-item p{
+  margin-top:4px
+}
+.dot-grid{
+    display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.circle-dot{
+    width: 7px;
+  height: 7px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
 }
