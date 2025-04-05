@@ -511,12 +511,19 @@ select {
   border-radius: 6px;
   border: 1px solid #ccc;
 }
+.chart-js{
+  margin-left: -10px;
+ 
+}
 
 .point{
-  font-size: 25px;
+  font-size: 20px;
+}
+.point-para{
+  font-size: 10px;
 }
 .learing-heading{
-  font-size: 12px;
+  font-size: 10px;
 }
 .list-content {
   display: flex;

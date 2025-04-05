@@ -245,14 +245,14 @@
 
 .form-container {
   background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   backdrop-filter: blur(8px);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 .form-group select + select {
   margin-top: 1rem; /* or any spacing like 8px, 16px etc */
-  padding: 10px;
+  padding: 5px;
 }
 .select-wrapper {
   margin-top: 1rem;
@@ -260,7 +260,7 @@
   
 }
 .select-wrapper select {
-  padding: 10px;
+  padding: 5px;
 }
 .custom-dropdown {
   display: flex;
@@ -278,17 +278,17 @@
   border-radius: 8px;
   background-color: white;
   cursor: pointer;
-  min-width: 240px;
+  min-width: 100px;
 }
 
 .dropdown-selected {
   flex: 1;
-  font-size: 14px;
+  font-size: 10px;
   color: #333;
 }
 
 .dropdown-arrow {
-  font-size: 10px;
+  font-size: 5px;
   color: #666;
   margin-left: 10px;
   pointer-events: none;
@@ -317,7 +317,7 @@
 .dropdown-options li {
   padding: 10px 14px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .dropdown-options li:hover {
@@ -389,12 +389,12 @@
   border-radius: 8px;
   background-color: white;
   cursor: pointer;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .dropdown-selected {
   flex: 1;
-  font-size: 12px;
+  font-size: 10px;
   color: #333;
 }
 
@@ -428,7 +428,7 @@
 .dropdown-options li {
   padding: 10px 12px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .dropdown-options li:hover {

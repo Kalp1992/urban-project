@@ -84,17 +84,17 @@ const Page1 = () => {
   // Responsive form positions
   let formX, formY;
   if (width < 480) {
-    formX = 0;
-    formY = 0;
+   formX = -50;
+   formY = -100;
   } else if (width < 768) {
-    formX = -80;
-    formY = -120;
+    formX = -20;
+    formY = -40;
   } else if (width < 1024) {
-    formX = -110;
-    formY = -160;
+    formX = -60;
+    formY = -280;
   } else {
-    formX = -130;
-    formY = -180;
+    formX = -160;
+    formY = -140;
   }
 
   return (

@@ -34,20 +34,20 @@ export default function page3() {
     let chartX, chartY, chartWidth;
     if (isMobile) {
       chartX = -20;
-      chartY = -150;
+      chartY = -100;
       chartWidth = 220;
     } else if (isTablet) {
-      chartX = -60;
-      chartY = -160;
-      chartWidth = 280;
+      chartX = -30;
+      chartY = -40;
+      chartWidth = 150;
     } else if (isDesktop) {
-      chartX = -100;
-      chartY = -180;
-      chartWidth = 340;
+      chartX = -60;
+      chartY = -280;
+      chartWidth = 250;
     } else {
-      chartX = -120;
-      chartY = -180;
-      chartWidth = 360;
+      chartX = -150;
+      chartY = -150;
+      chartWidth = 350;
     }
 
  const data = {
@@ -58,6 +58,7 @@ export default function page3() {
        data: [0.41, 0.43, 0.42, 0.44, 0.58, 0.6],
        borderColor: "gray",
        backgroundColor: "rgba(19, 23, 20, 0.3)",
+       marginLeft:"-10px",
        tension: 0.5,
        fill: true,
        pointRadius: 2,
@@ -152,7 +153,7 @@ export default function page3() {
                 <coneGeometry args={[1, 2, 16]} />
                 <meshStandardMaterial color="#8fff" />
               </mesh> */}
-              <MountainModel/>
+              <MountainModel />
               <ambientLight intensity={0.5} />
               <directionalLight
                 position={[5, 10, 5]}
@@ -182,10 +183,12 @@ export default function page3() {
           }}
         >
           <p className="learing-heading">LEARNING RATE VS ERROR REDUCTION</p>
-          <p>
+          <p className="point-para">
             <span className="point">3,000</span> Data points Analyzed
           </p>
-          <Line data={data} options={options} />
+        
+            <Line data={data} options={options} style={{ width: "80%" ,marginLeft:"-10px"}}/>{" "}
+          
         </motion.div>
       </AnimatePresence>
     </div>

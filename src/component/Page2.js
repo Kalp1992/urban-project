@@ -34,23 +34,23 @@ let formX, formY1, formY2, formWidth;
 if (isMobile) {
   formX = -20;
   formY1 = -150;
-  formY2 = -300;
+  formY2 = -10;
   formWidth = 160;
 } else if (isTablet) {
   formX = -50;
-  formY1 = -200;
-  formY2 = -350;
-  formWidth = 220;
+  formY1 = -80;
+  formY2 = 30;
+  formWidth = 150;
 } else if (isDesktop) {
-  formX = -130;
-  formY1 = -250;
-  formY2 = -100;
-  formWidth = 300;
+  formX = -60;
+  formY1 = -330;
+  formY2 = -200;
+  formWidth = 250;
 } else if (isLargeDesktop) {
-  formX = -150;
-  formY1 = -250;
+  formX = -140;
+  formY1 = -240;
   formY2 = -100;
-  formWidth = 360;
+  formWidth = 260;
 }
 
   function handleRangeInput(e, type) {
