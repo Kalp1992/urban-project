@@ -18,7 +18,7 @@ const useResponsive = () => {
   return windowWidth;
 };
 const MountainModel = () => {
-  const mountain = useGLTF("/models/landscape.gltf"); // Replace with actual path
+  const mountain = useGLTF("/models/Mountain.gltf"); // Replace with actual path
   return <primitive object={mountain.scene} scale={2} position={[2, 0, -3]} />;
 };
 const TerrenModel = () => {
